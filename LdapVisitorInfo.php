@@ -2,11 +2,11 @@
 /**
  * @author https://github.com/ThaDafinser
  */
-namespace Piwik\Plugins\LdapVisitorInfo;
+namespace Piwik\Plugins\LdapVisitorInfoPlesk;
 
 use Piwik\Plugin;
 
 
-class LdapVisitorInfo extends Plugin
+class LdapVisitorInfoPlesk extends Plugin
 {
 }

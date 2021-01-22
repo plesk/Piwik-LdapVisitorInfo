@@ -3,10 +3,10 @@
  * @author https://github.com/ThaDafinser
  * @author https://github.com/dshiryaev-plesk
  */
-namespace Piwik\Plugins\LdapVisitorInfo;
+namespace Piwik\Plugins\LdapVisitorInfoPlesk;
 
 use Piwik\DataTable;
-use Piwik\Plugins\LdapConnection\API as APILdapConnection;
+use Piwik\Plugins\LdapConnectionPlesk\API as APILdapConnectionPlesk;
 use Piwik\Plugins\Live\VisitorDetailsAbstract;
 use Piwik\Settings\Setting;
 use Zend\Ldap\Ldap;
@@ -165,8 +165,8 @@ class VisitorDetails extends VisitorDetailsAbstract
         $visitorAvatar = null;
         $visitorDescription = [];
 
-        // check if LdapConnection plugin is available!
-        if (! class_exists('Piwik\Plugins\LdapConnection\API')) {
+        // check if LdapConnectionPlesk plugin is available!
+        if (! class_exists('Piwik\Plugins\LdapConnectionPlesk\API')) {
             return [
                 $visitorAvatar,
                 $visitorDescription
@@ -198,7 +198,7 @@ class VisitorDetails extends VisitorDetailsAbstract
         ]);
 
         /* @var $ldap \Zend\Ldap\Ldap */
-        $ldap = APILdapConnection::getInstance()->getConnection();
+        $ldap = APILdapConnectionPlesk::getInstance()->getConnection();
         $ldap->connect();
 
         $filter = sprintf($searchFilter, $visitorUsername);

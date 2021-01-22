@@ -1,4 +1,4 @@
-# Matomo LdapVisitorInfo Plugin
+# Matomo LdapVisitorInfoPlesk Plugin
 
 ## Description
 
