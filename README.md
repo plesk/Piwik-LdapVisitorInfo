@@ -4,7 +4,7 @@
 
 Configurable Matomo plugin to view a visitor thumbnail and description live from LDAP.
 
-***This plugin requires https://github.com/ThaDafinser/LdapConnection to work!***
+***This plugin requires https://github.com/plesk/Piwik-LdapConnection to work!***
 
 ## FAQ
 
